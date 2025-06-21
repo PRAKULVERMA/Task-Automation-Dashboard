@@ -1,0 +1,95 @@
+import { AutomatedTask } from "@/types/task";
+
+export const mockTasks: AutomatedTask[] = [
+  {
+    id: "task-001",
+    name: "Employee Attendance Sync",
+    status: "Running",
+    lastRunTime: new Date("2024-01-15T08:00:00Z"),
+    triggeredBy: "HRMS System",
+    description:
+      "Automatically synchronizes employee attendance data from biometric devices to the HRMS portal.",
+    triggerType: "Daily",
+    nextRunTime: new Date("2024-01-16T08:00:00Z"),
+    executionTime: 45000,
+    category: "HR",
+  },
+  {
+    id: "task-002",
+    name: "Payroll Processing Validation",
+    status: "Completed",
+    lastRunTime: new Date("2024-01-14T02:30:00Z"),
+    triggeredBy: "Finance Team",
+    description:
+      "Validates payroll calculations and generates monthly salary reports with tax computations.",
+    triggerType: "Weekly",
+    nextRunTime: new Date("2024-01-21T02:30:00Z"),
+    executionTime: 120000,
+    category: "Finance",
+  },
+  {
+    id: "task-003",
+    name: "Invoice Generation & Email",
+    status: "Failed",
+    lastRunTime: new Date("2024-01-15T06:15:00Z"),
+    triggeredBy: "Operations Scheduler",
+    description:
+      "Generates client invoices automatically and sends them via email with payment links.",
+    triggerType: "Daily",
+    nextRunTime: new Date("2024-01-16T06:15:00Z"),
+    executionTime: 0,
+    category: "Operations",
+  },
+  {
+    id: "task-004",
+    name: "Client Onboarding Workflow",
+    status: "Scheduled",
+    lastRunTime: new Date("2024-01-12T10:00:00Z"),
+    triggeredBy: "Sales Team",
+    description:
+      "Automated workflow for new client onboarding including document collection and KYC verification.",
+    triggerType: "Manual",
+    nextRunTime: null,
+    executionTime: 180000,
+    category: "Operations",
+  },
+  {
+    id: "task-005",
+    name: "System Backup & Archive",
+    status: "Completed",
+    lastRunTime: new Date("2024-01-15T01:00:00Z"),
+    triggeredBy: "IT Infrastructure",
+    description:
+      "Daily backup of critical system data and archival of old records to cloud storage.",
+    triggerType: "Daily",
+    nextRunTime: new Date("2024-01-16T01:00:00Z"),
+    executionTime: 300000,
+    category: "IT",
+  },
+  {
+    id: "task-006",
+    name: "Marketing Campaign Analytics",
+    status: "Running",
+    lastRunTime: new Date("2024-01-15T09:30:00Z"),
+    triggeredBy: "Marketing Team",
+    description:
+      "Collects and analyzes data from various marketing campaigns and generates performance reports.",
+    triggerType: "Weekly",
+    nextRunTime: new Date("2024-01-22T09:30:00Z"),
+    executionTime: 90000,
+    category: "Marketing",
+  },
+  {
+    id: "task-007",
+    name: "Compliance Document Review",
+    status: "Scheduled",
+    lastRunTime: new Date("2024-01-10T14:00:00Z"),
+    triggeredBy: "Compliance Officer",
+    description:
+      "Automated review and flagging of documents that require compliance updates or renewals.",
+    triggerType: "Weekly",
+    nextRunTime: new Date("2024-01-17T14:00:00Z"),
+    executionTime: 150000,
+    category: "Operations",
+  },
+];
